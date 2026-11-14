@@ -4,18 +4,19 @@ A layout for the iPhone Duo's three screens, added to the **official Playport IP
 injected dylib. Playport itself is not rebuilt (it builds only on x86-64 Linux), so this works
 with an unchanged release.
 
-![DuoHinge layouts: inner screen upright, cover screen upright, sideways](layouts.svg)
+![DuoHinge layouts: inner screen upright, inner screen sideways, cover screen](layouts.svg)
 
 ## What it does
 
 | Posture | Game | Touch controls |
 | --- | --- | --- |
 | Inner screen upright, folded like a laptop or flat | the upper half, full width | all of them below the hinge |
-| Cover screen upright | full width at the top | all of them below the picture |
-| Sideways (inner or cover) | full width at the top | over the whole screen, mostly on the band below the picture |
+| Inner screen sideways | full width at the top | over the whole screen, the sticks and face buttons mostly on the band below the picture |
+| Cover screen (always sideways) | full width at the top | over the picture, with the same margin on both sides (the camera takes one) |
 
 - The layout follows the screen live during a game: fold, unfold, close or turn the phone and it
   changes. On the inner screen iOS turns the app with the phone; apps can't rotate it themselves.
+  The cover screen stays sideways, as in Playport.
 - The app runs at the Duo's native resolution, not in the letterboxed 667×375 compatibility
   window. Without this, an app built against an older SDK always gets that window.
 - Library, Home and the other pages:
