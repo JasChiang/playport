@@ -4,6 +4,8 @@ A layout for the iPhone Duo's three screens, added to the **official Playport IP
 injected dylib. Playport itself is not rebuilt (it builds only on x86-64 Linux), so this works
 with an unchanged release.
 
+![DuoHinge layouts: inner screen upright, cover screen upright, sideways](layouts.svg)
+
 ## What it does
 
 | Posture | Game | Touch controls |

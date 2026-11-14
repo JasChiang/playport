@@ -19,6 +19,13 @@
 
 </div>
 
+> [!NOTE]
+> **This fork adds an iPhone Duo layout.** On the Duo's inner and cover screens, held
+> upright or sideways, the game and the touch controls are laid out for the screen in use,
+> live as you fold, open, close or turn the phone. It is applied to the official Playport
+> IPA, no rebuild needed: see [**duo/README.md**](duo/README.md). Everything else in this
+> repository is upstream [Playport](https://github.com/playportdev/playport).
+
 Playport runs Windows games, 64-bit and 32-bit, on a stock, non-jailbroken
 iPhone. Install a game from Steam, GOG, Epic Games or Battle.net, or bring your
 own, pick up a controller or play with on-screen touch controls, and press Play.
