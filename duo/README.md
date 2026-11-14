@@ -31,7 +31,7 @@ official Playport IPA from the
 [releases](https://github.com/playportdev/playport/releases) (made for v0.5.0).
 
 ```sh
-git clone -b duo-hinge https://github.com/JasChiang/playport.git
+git clone https://github.com/JasChiang/playport.git
 cd playport
 duo/package.sh ~/Downloads/Playport-0.5.0.ipa      # writes Playport-0.5.0-duo.ipa
 ```
