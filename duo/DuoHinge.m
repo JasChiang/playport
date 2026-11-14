@@ -108,6 +108,11 @@ static CGRect duo_game_rect(UIView *surface) {
     CGFloat W = b.size.width, H = b.size.height, a = duo_aspect(surface);
     CGFloat gh = round(W / a);
     if (H > W) {
+        if (!duo_is_inner(surface.window)) {
+            // Cover screen upright: below the camera at the top, full width.
+            CGFloat y = surface.window ? duo_window_raw_insets(surface.window).top : 0;
+            if (y + gh <= floor(H / 2.0)) return CGRectMake(0, y, W, gh);
+        }
         CGFloat top = duo_is_inner(surface.window) ? floor(H / 2.0) : MIN(gh, floor(H / 2.0));
         if (gh <= top) return CGRectMake(0, floor((top - gh) / 2.0), W, gh);
         CGFloat gw = round(top * a);
@@ -194,6 +199,9 @@ static UIInterfaceOrientationMask duo_supportedOrientations(id self, SEL _cmd, U
     // Inner screen: let it turn with the phone (upright = split, sideways = full screen).
     // Cover screen: Playport's own landscape.
     if (!duo_disabled() && duo_is_inner(window)) return UIInterfaceOrientationMaskAllButUpsideDown;
+    // Cover screen: upright too during a game (game above, controls below); Playport's pages,
+    // designed for a landscape phone, stay sideways.
+    if (!duo_disabled() && gSurface.window) return UIInterfaceOrientationMaskAllButUpsideDown;
     return original;
 }
 

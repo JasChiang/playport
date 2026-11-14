@@ -1,6 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="760" height="370" viewBox="0 0 760 370" font-family="-apple-system, Segoe UI, Helvetica, Arial, sans-serif">
+<svg xmlns="http://www.w3.org/2000/svg" width="910" height="370" viewBox="0 0 910 370" font-family="-apple-system, Segoe UI, Helvetica, Arial, sans-serif">
   <title>DuoHinge layouts on the iPhone Duo</title>
-  <rect width="760" height="370" rx="16" fill="#0B0E13"/>
+  <rect width="910" height="370" rx="16" fill="#0B0E13"/>
   <defs>
     <g id="abxy">
       <circle cx="0" cy="-11" r="6" fill="none" stroke="#C9CED6" stroke-width="1.5"/>
@@ -56,8 +56,25 @@
   <text x="411" y="272" text-anchor="middle" font-size="12" fill="#9AA3AE">picture at the top; sticks and face</text>
   <text x="411" y="288" text-anchor="middle" font-size="12" fill="#9AA3AE">buttons mostly on the band below</text>
 
-  <!-- 3. Cover screen, always sideways (678x466) -->
-  <g transform="translate(578,64)">
+  <!-- 3. Cover screen upright, during a game (466x678) -->
+  <g transform="translate(570,24)">
+    <rect x="-6" y="-6" width="152" height="215" rx="16" fill="#1E242D"/>
+    <rect width="140" height="203" rx="10" fill="#000"/>
+    <rect x="0" y="0" width="140" height="79" fill="#F5B544"/>
+    <text x="70" y="45" text-anchor="middle" font-size="14" font-weight="600" fill="#151A21">Game</text>
+    <rect x="8" y="90" width="28" height="12" rx="6" fill="none" stroke="#C9CED6" stroke-width="1.5"/>
+    <rect x="104" y="90" width="28" height="12" rx="6" fill="none" stroke="#C9CED6" stroke-width="1.5"/>
+    <rect x="8" y="107" width="28" height="12" rx="6" fill="none" stroke="#C9CED6" stroke-width="1.5"/>
+    <rect x="104" y="107" width="28" height="12" rx="6" fill="none" stroke="#C9CED6" stroke-width="1.5"/>
+    <use href="#stick" x="34" y="168"/>
+    <use href="#abxy" x="106" y="168"/>
+  </g>
+  <text x="640" y="252" text-anchor="middle" font-size="14" font-weight="600" fill="#EEF1F5">Cover screen, upright</text>
+  <text x="640" y="272" text-anchor="middle" font-size="12" fill="#9AA3AE">during a game: controls</text>
+  <text x="640" y="288" text-anchor="middle" font-size="12" fill="#9AA3AE">below the picture</text>
+
+  <!-- 4. Cover screen sideways (678x466) -->
+  <g transform="translate(728,64)">
     <rect x="-6" y="-6" width="164" height="117" rx="14" fill="#1E242D"/>
     <rect width="152" height="105" rx="9" fill="#000"/>
     <rect x="0" y="0" width="152" height="86" fill="#F5B544"/>
@@ -67,8 +84,8 @@
     <use href="#stick-on" x="38" y="78"/>
     <use href="#abxy-on" x="114" y="76"/>
   </g>
-  <text x="654" y="212" text-anchor="middle" font-size="14" font-weight="600" fill="#EEF1F5">Cover screen</text>
-  <text x="654" y="232" text-anchor="middle" font-size="12" fill="#9AA3AE">always sideways; controls</text>
-  <text x="654" y="248" text-anchor="middle" font-size="12" fill="#9AA3AE">over the picture, the same</text>
-  <text x="654" y="264" text-anchor="middle" font-size="12" fill="#9AA3AE">margin on both sides</text>
+  <text x="804" y="212" text-anchor="middle" font-size="14" font-weight="600" fill="#EEF1F5">Cover screen, sideways</text>
+  <text x="804" y="232" text-anchor="middle" font-size="12" fill="#9AA3AE">controls over the picture,</text>
+  <text x="804" y="248" text-anchor="middle" font-size="12" fill="#9AA3AE">the same margin on</text>
+  <text x="804" y="264" text-anchor="middle" font-size="12" fill="#9AA3AE">both sides</text>
 </svg>
